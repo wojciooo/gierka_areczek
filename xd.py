@@ -2,10 +2,10 @@ from flask import Flask, request, jsonify
 import json
 
 app = Flask(__name__)
-
-@app.route('login', methods=['POST'])
-def login():
-    rf = request.form
+#
+# @app.route('login', methods=['POST'])
+# def login():
+#     rf = request.form
 
 @app.route('/sum', methods=['POST'])
 def sum_num():
@@ -27,4 +27,4 @@ def sum_num():
     return resp
 
 
-app.run("127.0.0.1", 1234)
+app.run("127.0.0.1", 3333)
